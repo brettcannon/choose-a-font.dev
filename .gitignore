@@ -1,0 +1,8 @@
+# Erlang
+*.beam
+*.ez
+/build
+erl_crash.dump
+
+# Lustre
+/priv

@@ -1,0 +1,69 @@
+@import url(https://fonts.bunny.net/css?family=anonymous-pro:400|b612-mono:400|fira-code:400|ibm-plex-mono:400|inconsolata:400|jetbrains-mono:400|noto-sans-mono:400|red-hat-mono:400|roboto-mono:400|source-code-pro:400|ubuntu-sans-mono:400);
+
+
+html,
+body {
+    /* Necessary to prevent the scrollbar from appearing. */
+    height: 100%;
+    margin: 0;
+}
+
+button {
+    margin: 0.2em;
+}
+
+p {
+    margin: 2em;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    gap: 0.8em;
+}
+
+#options textarea {
+    flex: 1;
+    box-sizing: border-box;
+    /* Approxmate size for what will be shown on the battle screen. */
+    width: 40vw;
+    height: 50vh;
+}
+
+#battle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 0.8em;
+}
+
+#battle pre {
+    font-size: medium;
+    padding: 0.5em;
+    outline: 2px solid black;
+}
+
+#battle .bottom-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#winner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    font-size: xx-large;
+}
