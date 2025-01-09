@@ -16,11 +16,9 @@ pub type Msg {
 }
 
 pub fn update(_model: Model, msg: Msg) -> Model {
-  case msg {
-    UserUpdatedSample(new_sample) -> Model(sample: new_sample)
-    // Transition message
-    UserReady -> panic
-  }
+  let assert UserUpdatedSample(new_sample) = msg
+
+  Model(sample: new_sample)
 }
 
 pub fn view(model: Model) -> element.Element(Msg) {

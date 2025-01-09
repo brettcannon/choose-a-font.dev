@@ -24,13 +24,11 @@ pub type Msg {
 }
 
 fn ko(model: Model, winner: Winner) -> Model {
-  case model.competitors {
-    [player1, player2, ..rest] ->
-      case winner {
-        Font1 -> next_battle(model, player1, rest)
-        Font2 -> next_battle(model, player2, rest)
-      }
-    _ -> panic
+  let assert [player1, player2, ..rest] = model.competitors
+
+  case winner {
+    Font1 -> next_battle(model, player1, rest)
+    Font2 -> next_battle(model, player2, rest)
   }
 }
 
