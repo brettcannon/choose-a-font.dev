@@ -5,7 +5,7 @@ pub type Font {
   Font(family: String, homepage: URL)
 }
 
-pub const fonts: List(Font) = [
+pub const all_fonts: List(Font) = [
   Font(
     "Anonymous Pro",
     "https://www.marksimonson.com/fonts/view/anonymous-pro/",
