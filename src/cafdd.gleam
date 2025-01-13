@@ -20,7 +20,14 @@ pub type Msg {
 
 fn init(_flags) -> Model {
   SettingsModel(settings.Model(
-    sample: "Sample text; feel free to edit...\n\nABCDEFGHIJKLMNOPQRSTUVWXYZ\nabcdefghijklmnopqrstuvwxyz\n0123456789\n1Il|\n0Oo\n>= ->",
+    sample: "Sample text; feel free to edit...\n\n"
+    <> "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n"
+    <> "abcdefghijklmnopqrstuvwxyz\n"
+    <> "0123456789"
+    <> "\n"
+    <> "1Il|\n"
+    <> "0Oo\n"
+    <> ">= ->",
   ))
 }
 
