@@ -1,5 +1,8 @@
+pub type URL =
+  String
+
 pub type Font {
-  Font(family: String, homepage: String)
+  Font(family: String, homepage: URL)
 }
 
 pub const fonts: List(Font) = [
